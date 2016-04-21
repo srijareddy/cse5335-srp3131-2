@@ -23,5 +23,5 @@ fs.createReadStream(csvfile).pipe(csv_con);
 
 csv_con.on("end_parsed", function(jsonObj){
     
-    conn.collection('weather').insert(jsonObj);
+    conn.collection('sample').insert(jsonObj);
     }); 
