@@ -12,7 +12,9 @@
   "dependencies": {
     "ejs": "2.4.1",
     "express": "4.13.3",
-    "mongoose": "^4.4.12"
+    "mongodb": "^2.1.16",
+    "mongoose": "^4.4.12",
+    "prompt": "^1.0.0"
   },
   "repository": {
     "type": "git",

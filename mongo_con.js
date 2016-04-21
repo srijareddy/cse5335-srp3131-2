@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
-var prompt = require('prompt')
+var prompt = require('prompt');
 var converter = require('csvtojson').Converter;
 var fs = require('fs');
 
-mongoose.connect('mongodb://srija:srija@ds013901.mlab.com:13901/heroku_r1s7tdsw')
+mongoose.connect('mongodb://srija:srija@ds013901.mlab.com:13901/heroku_r1s7tdsw');
 var conn = mongoose.connection;
 
 conn.on('error', function(err){
