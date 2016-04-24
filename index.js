@@ -18,7 +18,7 @@ app.listen(app.get('port'), function() {
 });
 app.get('/p/:tagId', function(req, res) {
   var i= req.params.tagId;
-  i = parseInt(i);
+  i = parseInt(i, 10);
   //connection code
   
   var MongoClient = require('mongodb').MongoClient;
@@ -29,7 +29,7 @@ app.get('/p/:tagId', function(req, res) {
         if(err) throw err;
         console.log("Server:"+doc);
 		
-		res.json(doc)
+		res.json(doc);
 	    db.close();
      });	 
 });
