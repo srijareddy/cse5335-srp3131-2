@@ -19,11 +19,9 @@ $( document ).ready(function() {
   console.log(data);
   var div = document.getElementById('data');
 div.innerHTML = div.innerHTML +"<div>"+JSON.stringify(data)+"</div>";
-  
-  
   i = i+1;
   localStorage.setItem("i", i.toString());
-  if ( $("#data").length > 20){
+  if (i > 20){
     
     $("#data").find('div:first').css("color","green")
   $("#data").find('div:first').fadeOut(100, function(){ $(this).remove();});
