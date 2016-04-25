@@ -18,7 +18,7 @@ app.listen(app.get('port'), function() {
 });
 app.get('/p/:tagId', function(req, res) {
   var i= req.params.tagId;
-  i = parseInt(i, 10);
+  i = parseInt(i);
   //connection code
   
   var MongoClient = require('mongodb').MongoClient;
