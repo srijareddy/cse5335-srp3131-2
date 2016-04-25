@@ -23,10 +23,10 @@ div.innerHTML = div.innerHTML +"<div>"+JSON.stringify(data)+"</div>";
   
   i = i+1;
   localStorage.setItem("i", i.toString());
-  if (i > 20){
+  if ( $("#data").length > 20){
     
     $("#data").find('div:first').css("color","green")
-  $("#data").find('div:first').fadeOut(300, function(){ $(this).remove();});
+  $("#data").find('div:first').fadeOut(100, function(){ $(this).remove();});
   }
 });
 }
