@@ -16,8 +16,9 @@ $( document ).ready(function() {
     $.get( "/p/"+i.toString(), function( data ) {
   console.log(i);
   console.log(data);
-  var html_str = $("#div").html();
-        html_str  +="<div>"+JSON.stringify(data)+"</div>";
+  var html_str = $("#data").html();
+        console.log(html_str);
+        html_str  += "<div>"+JSON.stringify(data)+"</div>";
         $("#div").html(html_str);
   //var div = $('#data');
 //div.innerHTML = div.innerHTML +"<div>"+JSON.stringify(data)+"</div>";
