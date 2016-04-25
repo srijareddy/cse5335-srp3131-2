@@ -17,7 +17,7 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 app.get('/p/:tagId', function(req, res) {
-  var i= req.params.tagId;
+  var i= req.param("tagId");
   i = parseInt(i);
   //connection code
   
