@@ -3,7 +3,7 @@ var mc = require('mongodb').MongoClient;
 var MongoClient = require('mongodb').MongoClient;
 
 // Connect to the db
-MongoClient.connect("mongodb://sreeteja:teja123@ds033153.mongolab.com:33153/heroku_w41twx8r", function(err, db) {
+MongoClient.connect("mongodb://srija:srija@ds013901.mlab.com:13901/heroku_r1s7tdsw", function(err, db) {
   if(err) { return console.dir(err); }
 
   var collection = db.collection('earths');
