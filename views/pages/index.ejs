@@ -9,16 +9,18 @@ $( document ).ready(function() {
     console.log( "ready!" );
     localStorage.setItem("i", "1");
     
-    
-    var myVar = setInterval(function(){ addData() }, 500);
-    function addData(){
+   
+     function addData(){
       i = localStorage.getItem("i");
       i =  parseInt(i); 
     $.get( "/p/"+i.toString(), function( data ) {
   console.log(i);
   console.log(data);
-  var div = document.getElementById('data');
-div.innerHTML = div.innerHTML +"<div>"+JSON.stringify(data)+"</div>";
+  var html_str = $("#div").html();
+        html_str  +="<div>"+JSON.stringify(data)+"</div>";
+        $("#div").html(html_str);
+  //var div = $('#data');
+//div.innerHTML = div.innerHTML +"<div>"+JSON.stringify(data)+"</div>";
   i = i+1;
   localStorage.setItem("i", i.toString());
   if (i > 20){
@@ -28,6 +30,12 @@ div.innerHTML = div.innerHTML +"<div>"+JSON.stringify(data)+"</div>";
   }
 });
 }
+   
+   
+   
+    
+    var myVar = setInterval(function(){ addData() }, 500);
+  
 });
 
 
