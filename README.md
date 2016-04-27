@@ -1,39 +1,17 @@
-# node-js-getting-started
+#Cse 5335 Project-2
+##Readme
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+### What aspect of the implementation did you find easy, if any, and why?
+The project was not easy to work on and consumed a lot of time in understanding the technologies used. But once we understand them,
+it was easy to work on the tasks.
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+### What aspect of the implementation did you find hard, if any, and why?
+Connecting to the database was a big challenge for me. It took a lot of time for me to understand and correct my mistakes
+as I have never worked with any of the mentioned data storage tools earlier.
 
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+### If you were to use these technologies professionally, what would be your biggest concern?
+I have used MongoDb in my project.And the little research I did showed that there are a few facts about MongoDb
+that might be of concern when dealing with it. Few of them are:
+-It might lose data
+-It does not comply to the ACID properties
+-Scalability and maintenance is difficult
